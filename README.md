@@ -93,7 +93,3 @@ See [Incident report](incident-report.md) for incident workflow, [Commands](comm
 - Screenshots show observed state, successful ICMP tests, and routing; they do not provide a full raw packet capture or independently record the IP forwarding sysctl state. Operational forwarding is supported by the successful inter-subnet pings, not by a sysctl screenshot.
 - ICMP checks covered four packets per direction per baseline/recovery test; these are point-in-time checks, not latency SLAs or proof of prolonged availability.
 - Commands in the runbook were assembled from the coached lab steps and verified results; they are not an independently exported shell history.
-
-## CV-ready description
-
-**Linux Network Configuration & Fault Isolation (Ubuntu VM)** — Built a two-subnet virtual network with Linux network namespaces, veth pairs, IP addressing, and routing. Simulated a faulty default gateway; diagnosed loss of connectivity using ping and routing tables, then restored successful two-way inter-subnet communication (4/4 replies in each recovery test). Documented six screenshots and an incident report.
